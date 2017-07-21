@@ -1,0 +1,33 @@
+Utilizando o github
+
+Instalar o github linux 
+apt-get install git-core
+
+Após o processo é necessário gerar chave ssh e fazer o cadastro no repositorio.
+Confirme a existencia de uma chave na pasta ~/.ssh/ caso nao exita crie.
+
+ssh-keygen -t rsa -C "comment"
+
+substitua o "comment" por outro cometario que possa lembra o uso da chave.
+
+copie o conteudo do arquivo ~/.ssh/id_rsa.pub
+
+acesse o site github.com/account e insira a cadeia de chaves no site para que aceite comando ssh,
+depois de salvar vamos testar o acesso.
+
+ssh git@github.com
+
+configurando a conta no computador
+
+git config --global user.name "Nome"
+git config --global user.email seuemail@email.com
+
+Criando um projeto
+
+crie as pastas do projeto a se sincronizado, iicialize a pasta para o git
+
+git init
+
+será criado a pasta .git com as configurações de sincronização
+
+
